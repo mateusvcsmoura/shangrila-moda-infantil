@@ -67,47 +67,26 @@ h1, h2 {
     margin-bottom: 2rem;
 }
 
-.botao {
-    background-color: var(--preto);
-    color: var(--branco);
-    border-radius: 0.5rem;
-    padding: 1rem 3rem;
-    text-decoration: none;
-    transition: .4s ease-out;
-}
-
-.botao:hover {
-    border-bottom: 1px solid var(--preto);
-    background-color: transparent;
-    color: var(--preto);
-    cursor: pointer;
-}
-
-.botao-transparente {
-    background-color: transparent;
-    color: var(--preto);
-    border-radius: 0.5rem;
+.second-section {
     padding: 1rem 2rem;
-    text-underline-offset: 0.25rem;
-    transition: .350s linear;
 }
 
-.botao-transparente:hover {
-    background-color: var(--preto);
-    color: var(--branco);
-    cursor: pointer;
+.second-section-title {
+    text-align: center !important;
 }
 
-main > section#clinica {
+.second-section-text-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 4rem;
-    padding: 4rem 5rem;
+    gap: 3rem;
+    padding: 0 3rem;
 }
 
-main > section#clinica > div > ul > li {
-    margin-bottom: 1rem;
-    margin-left: 2rem;
+li {
+    text-align: justify !important;
+    font-size: 18px;
+    margin: 1rem 0;
 }
 
 main > section#farmacia {
