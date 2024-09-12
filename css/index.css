@@ -12,6 +12,10 @@
     --branco: #FFFFFF;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 /* Fonte Poppins */
 
 .poppins-regular {
