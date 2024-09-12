@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --preto: #000;
+    --preto-suave: rgba(37, 48, 55, 0.91);
+    --cinza: #413a3ff1;
+
+    --branco: #FFFFFF;
+}
+
+/* Fonte Poppins */
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
+nav {
+    padding: 1.5rem 2rem !important; /* Necessário para sobrescrever o padding padrão do Bootstrap */
+}
+
+.navbar-brand {
+    text-align: center !important;
+}
+
+/* Main */
+
+main > section#inicio {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 3rem;
+}
+
+h1, h2 {
+    font-weight: 600;
+    text-align: justify !important;
+    margin-bottom: 2rem;
+}
+
+.paragrafo {
+    line-height: 150%;
+    text-align: justify !important;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.botao {
+    background-color: var(--preto);
+    color: var(--branco);
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    transition: .4s ease-out;
+}
+
+.botao:hover {
+    border-bottom: 1px solid var(--preto);
+    background-color: transparent;
+    color: var(--preto);
+    cursor: pointer;
+}
+
+.botao-transparente {
+    background-color: transparent;
+    color: var(--preto);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    text-underline-offset: 0.25rem;
+    transition: .350s linear;
+}
+
+.botao-transparente:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+main > section#clinica {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 5rem;
+}
+
+main > section#clinica > div > ul > li {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+main > section#farmacia {
+    padding: 4rem 5rem;
+    text-align: center;
+}
+
+main > section#farmacia > img {
+    margin: 4rem auto;
+}
+
+main > section#farmacia .paragrafo {
+    max-width: 59.375rem;
+    margin: 0 auto;
+}
+
+
+main > section#duvidas {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 5rem;
+}
+
+.pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pergunta h3 {
+    font-size: 110%;
+}
+
+.duvida .pergunta {
+    border: 2px solid var(--preto-suave);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.duvida .paragrafo {
+    border-right: 1px solid var(--preto-suave);
+    border-bottom: 1px solid var(--preto-suave);
+    border-left: 1px solid var(--preto-suave);
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-top: -0.5rem;
+    padding: 0 1.5rem;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s ease-out;
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 1.5rem;
+}
