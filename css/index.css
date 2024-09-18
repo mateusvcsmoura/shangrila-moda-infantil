@@ -23,7 +23,7 @@ html {
     font-weight: 400;
     font-style: normal;
 }
-  
+
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -38,7 +38,8 @@ body {
 /* Header */
 
 nav {
-    padding: 1.5rem 2rem !important; /* Necessário para sobrescrever o padding padrão do Bootstrap */
+    padding: 1.5rem 2rem !important;
+    /* Necessário para sobrescrever o padding padrão do Bootstrap */
 }
 
 .navbar-brand {
@@ -47,20 +48,21 @@ nav {
 
 /* Main */
 
-main > section#inicio {
+main>section#start {
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 1rem 3rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 600;
     text-align: justify !important;
     margin-bottom: 2rem;
 }
 
-.paragrafo {
+.paragraph {
     line-height: 150%;
     text-align: justify !important;
     margin-top: 1.5rem;
@@ -89,22 +91,22 @@ li {
     margin: 1rem 0;
 }
 
-main > section#farmacia {
+main>section#farmacia {
     padding: 4rem 5rem;
     text-align: center;
 }
 
-main > section#farmacia > img {
+main>section#farmacia>img {
     margin: 4rem auto;
 }
 
-main > section#farmacia .paragrafo {
+main>section#farmacia .paragrafo {
     max-width: 59.375rem;
     margin: 0 auto;
 }
 
 
-main > section#duvidas {
+main>section#duvidas {
     display: flex;
     align-items: center;
     gap: 4rem;
