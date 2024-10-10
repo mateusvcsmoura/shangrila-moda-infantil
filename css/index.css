@@ -102,6 +102,7 @@ main>section#farmacia>img {
 
 main>section#farmacia .paragrafo {
     max-width: 59.375rem;
+    text-align: justify;
     margin: 0 auto;
 }
 
