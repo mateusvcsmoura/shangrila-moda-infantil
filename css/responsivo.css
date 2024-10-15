@@ -1,3 +1,14 @@
+@media (max-width: 1310px) {
+    main>section.forth-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        padding: 0rem;
+    }
+}
+
 @media (max-width: 1060px) {
     .start-section {
         display: flex;
@@ -32,6 +43,16 @@
     }
 
     .second-section-image {
+        width: 90vw;
+        height: 380px;
+    }
+
+    main>section#duvidas {
+        gap: 2rem;
+        padding: 0.5rem 5rem;
+    }
+
+    .forth-section-image {
         width: 90vw;
         height: 380px;
     }
@@ -95,6 +116,23 @@
     .second-section-image {
         width: 80vw;
         height: 380px;
+    }
+
+    main>section#duvidas {
+        padding: 0.5rem 2rem;
+    }
+
+    .forth-section-image {
+        width: 80vw;
+        height: 380px;
+    }
+
+    .pergunta h3 {
+        font-size: 100%;
+    }
+
+    .duvida .pergunta {
+        padding: 0.5rem;
     }
 }
 

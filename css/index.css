@@ -16,6 +16,10 @@ html {
     scroll-behavior: smooth !important;
 }
 
+body {
+    height: 100vh;
+}
+
 /* Fonte Poppins */
 
 .poppins-regular {
@@ -114,6 +118,10 @@ main>section#duvidas {
     padding: 4rem 5rem;
 }
 
+.faq-title {
+    margin-bottom: 1rem;
+}
+
 .pergunta {
     display: flex;
     align-items: center;
@@ -127,7 +135,7 @@ main>section#duvidas {
 .duvida .pergunta {
     border: 2px solid var(--preto-suave);
     border-radius: 0.5rem;
-    padding: 1.5rem;
+    padding: 1.25rem;
     cursor: pointer;
 }
 
