@@ -12,12 +12,10 @@
     --branco: #FFFFFF;
 }
 
-html {
-    scroll-behavior: smooth !important;
-}
-
+html,
 body {
-    height: 100vh;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Fonte Poppins */
@@ -32,11 +30,6 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-}
-
-body {
-    height: 100vh;
-    font-family: "Poppins", sans-serif;
 }
 
 /* Header */
@@ -73,27 +66,53 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.second-section {
-    padding: 1rem 2rem;
+/* SECOND SECTION */
+
+section.second-section {
+    padding: 3rem 4rem;
 }
 
-.second-section-title {
+section.second-section h2.title {
+    padding: 1rem 0;
+    margin-bottom: 0.2rem;
     text-align: center !important;
+    color: var(--cinza);
 }
 
-.second-section-text-container {
+section.second-section div.cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    padding: 0 3rem;
 }
 
-li {
-    text-align: justify !important;
-    font-size: 18px;
-    margin: 1rem 0;
+section.second-section div.cards-container .item {
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform .5s linear;
+
+    border-bottom: 2px solid #000;
+    border-radius: 0.1rem;
 }
+
+section.second-section div.cards-container .item:hover {
+    transform: scale(1.02);
+}
+
+section.second-section div.cards-container .item>img {
+    height: 200px;
+    width: 250px;
+    border-radius: 0.1rem;
+}
+
+section.second-section div.cards-container .item>p {
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* THIRD SECTION */
 
 main>section#farmacia {
     padding: 4rem 5rem;
@@ -110,6 +129,7 @@ main>section#farmacia .paragrafo {
     margin: 0 auto;
 }
 
+/* FORTH SECTION */
 
 main>section#duvidas {
     display: flex;
