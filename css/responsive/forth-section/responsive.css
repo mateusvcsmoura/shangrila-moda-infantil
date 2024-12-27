@@ -10,32 +10,32 @@
 }
 
 @media (max-width: 1060px) {
-    main>section#duvidas {
+    main>section.forth-section {
         gap: 2rem;
         padding: 0.5rem 5rem;
     }
 
-    .forth-section-image {
+    section.forth-section>img.forth-section-image {
         width: 90vw;
         height: 380px;
     }
 }
 
 @media (max-width: 500px) {
-    main>section#duvidas {
+    main>section.forth-section {
         padding: 0.5rem 2rem;
     }
 
-    .forth-section-image {
+    section.forth-section>img.forth-section-image {
         width: 80vw;
         height: 380px;
     }
 
-    .pergunta h3 {
+    section.forth-section>div.faq-container>div.faq-item>div.faq-question>h3 {
         font-size: 100%;
     }
 
-    .duvida .pergunta {
+    section.forth-section>div.faq-container>div.faq-item>div.faq-question {
         padding: 0.5rem;
     }
 }

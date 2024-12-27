@@ -39,13 +39,13 @@ header>nav {
     /* Necessário para sobrescrever o padding padrão do Bootstrap */
 }
 
-.navbar-brand {
+header>nav>div>h1.navbar-brand {
     text-align: center !important;
 }
 
 /* Main */
 
-main>section#start {
+main>section.start-section {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -59,7 +59,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.paragraph {
+section.start-section div.start-text-container .paragraph {
     line-height: 150%;
     text-align: justify !important;
     margin-top: 1.5rem;
@@ -114,16 +114,16 @@ section.second-section div.cards-container .item>p {
 
 /* THIRD SECTION */
 
-main>section#farmacia {
+main>section.third-section {
     padding: 4rem 5rem;
     text-align: center;
 }
 
-main>section#farmacia>img {
+main>section.third-section>img.third-section-image {
     margin: 4rem auto;
 }
 
-main>section#farmacia .paragrafo {
+main>section.third-section .paragraph {
     max-width: 59.375rem;
     text-align: justify;
     margin: 0 auto;
@@ -131,35 +131,35 @@ main>section#farmacia .paragrafo {
 
 /* FORTH SECTION */
 
-main>section#duvidas {
+main>section.forth-section {
     display: flex;
     align-items: center;
     gap: 4rem;
     padding: 4rem 5rem;
 }
 
-.faq-title {
+section.forth-section>div.faq-container .faq-title {
     margin-bottom: 1rem;
 }
 
-.pergunta {
+section.forth-section>div.faq-container>div.faq-item>div.faq-question {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.pergunta h3 {
+section.forth-section>div.faq-container>div.faq-item>div.faq-question>h3 {
     font-size: 110%;
 }
 
-.duvida .pergunta {
+section.forth-section>div.faq-container>div.faq-item>div.faq-question {
     border: 2px solid var(--preto-suave);
     border-radius: 0.5rem;
     padding: 1.25rem;
     cursor: pointer;
 }
 
-.duvida .paragrafo {
+.faq-item .faq-answer {
     border-right: 1px solid var(--preto-suave);
     border-bottom: 1px solid var(--preto-suave);
     border-left: 1px solid var(--preto-suave);
@@ -172,7 +172,7 @@ main>section#duvidas {
     transition: .2s ease-out;
 }
 
-.duvida.ativa .paragrafo {
+.faq-item.active .faq-answer {
     height: fit-content;
     opacity: 1;
     padding: 1.5rem;
@@ -189,11 +189,11 @@ footer {
     padding: 4rem 4rem;
 }
 
-.footer-logo {
+footer>div.footer-slogan>.footer-logo {
     color: #fff;
 }
 
-footer .titulo {
+footer .strong-title {
     display: block;
     color: var(--branco);
     font-weight: 600;
@@ -211,12 +211,12 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
-ul.footer-list-items {
+footer>div.hide>nav>ul.footer-list-items {
     list-style: none;
     padding: 0;
 }
 
-ul.footer-list-items>li {
+footer>div.hide>nav>ul.footer-list-items>li {
     margin: 0.6rem 0;
 }
 
@@ -231,6 +231,6 @@ footer p a {
     text-decoration: none;
 }
 
-.footer-link:hover {
+footer>div.footer-contact p>a.footer-link:hover {
     text-decoration: underline;
 }

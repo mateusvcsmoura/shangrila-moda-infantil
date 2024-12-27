@@ -12,7 +12,7 @@
 }
 
 @media (max-width: 950px) {
-    .footer-logo {
+    footer>div.footer-slogan>.footer-logo {
         font-size: 30px;
     }
 }
@@ -31,8 +31,8 @@
         padding: 2rem 4rem;
     }
 
-    .footer-slogan,
-    .footer-logo {
+    footer>div.footer-slogan,
+    footer>div.footer-slogan>.footer-logo {
         text-align: center !important;
     }
 
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 500px) {
-    nav {
+    header>nav {
         padding: 0.8rem 2rem !important;
     }
 }
@@ -59,17 +59,17 @@
         padding: 2rem;
     }
 
-    .footer-slogan,
-    .footer-logo {
+    footer>div.footer-slogan,
+    footer>div.footer-slogan>.footer-logo {
         text-align: left !important;
     }
 
-    .footer-logo {
+    footer>div.footer-slogan>.footer-logo {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
-    strong.titulo {
+    footer .strong-title {
         font-size: 1rem;
     }
 

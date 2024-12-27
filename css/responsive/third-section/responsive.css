@@ -1,40 +1,40 @@
 @media (max-width: 1060px) {
-    .paragraph {
+    section.third-section .paragraph {
         line-height: 175%;
         font-size: 20px;
     }
 }
 
 @media (max-width: 700px) {
-    .paragraph {
+    section.third-section .paragraph {
         line-height: 150%;
         font-size: 18px;
     }
 
-    main>section#farmacia {
+    main>section.third-section {
         padding: 1rem 2rem;
     }
 }
 
 @media (max-width: 662px) {
-    .third-section-image {
+    section.third-section>img.third-section-image {
         width: 80vw;
         height: 380px;
     }
 }
 
 @media (max-width: 575px) {
-    main>section#farmacia>img {
+    main>section.third-section>img.third-section-image {
         margin: 0.2rem 0;
     }
 }
 
 @media (max-width: 383px) {
-    main>section#farmacia {
+    main>section.third-section {
         padding: 0 1rem;
     }
 
-    main>section#farmacia>img {
+    main>section.third-section>img.third-section-image {
         width: 90vw;
         height: 300px;
     }
