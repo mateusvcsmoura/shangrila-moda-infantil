@@ -5,20 +5,20 @@
 }
 
 :root {
-    --preto: #000;
-    --preto-suave: rgba(37, 48, 55, 0.91);
-    --cinza: #413a3ff1;
-
-    --branco: #FFFFFF;
+    --black: #000;
+    --soft-black: rgba(37, 48, 55, 0.91);
+    --grey: #413a3ff1;
+    --white: #FFFFFF;
 }
 
 html,
 body {
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
-/* Fonte Poppins */
+/* Font Poppins */
 
 .poppins-regular {
     font-family: "Poppins", sans-serif;
@@ -76,7 +76,7 @@ section.second-section h2.title {
     padding: 1rem 0;
     margin-bottom: 0.2rem;
     text-align: center !important;
-    color: var(--cinza);
+    color: var(--black);
 }
 
 section.second-section div.cards-container {
@@ -90,7 +90,7 @@ section.second-section div.cards-container .item {
     cursor: pointer;
     transition: transform .5s linear;
 
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--black);
     border-radius: 0.1rem;
 }
 
@@ -153,16 +153,16 @@ section.forth-section>div.faq-container>div.faq-item>div.faq-question>h3 {
 }
 
 section.forth-section>div.faq-container>div.faq-item>div.faq-question {
-    border: 2px solid var(--preto-suave);
+    border: 2px solid var(--soft-black);
     border-radius: 0.5rem;
     padding: 1.25rem;
     cursor: pointer;
 }
 
 .faq-item .faq-answer {
-    border-right: 1px solid var(--preto-suave);
-    border-bottom: 1px solid var(--preto-suave);
-    border-left: 1px solid var(--preto-suave);
+    border-right: 1px solid var(--soft-black);
+    border-bottom: 1px solid var(--soft-black);
+    border-left: 1px solid var(--soft-black);
     border-radius: 0 0 0.5rem 0.5rem;
     margin-top: -0.5rem;
     padding: 0 1.5rem;
@@ -181,27 +181,26 @@ section.forth-section>div.faq-container>div.faq-item>div.faq-question {
 /* Footer */
 
 footer {
-    background-color: var(--cinza);
+    background-color: var(--grey);
     border-radius: 0.2rem;
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
     padding: 4rem 4rem;
 }
 
 footer>div.footer-slogan>.footer-logo {
-    color: #fff;
+    color: var(--white);
 }
 
 footer .strong-title {
     display: block;
-    color: var(--branco);
+    color: var(--white);
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
 footer nav a {
-    color: var(--branco);
+    color: var(--white);
     display: block;
     margin-bottom: 1rem;
     text-decoration: none;
@@ -221,13 +220,13 @@ footer>div.hide>nav>ul.footer-list-items>li {
 }
 
 footer p {
-    color: var(--branco);
+    color: var(--white);
     margin-bottom: 1rem;
     max-width: 21.875rem;
 }
 
 footer p a {
-    color: var(--branco);
+    color: var(--white);
     text-decoration: none;
 }
 
